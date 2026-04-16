@@ -1,0 +1,43 @@
+:root {
+    --bg-page: #070a0f;
+    --bg-surface: #0e131b;
+    --bg-soft: #111827;
+    --bg-card: #111827;
+    --primary: #e30510;
+    --primary-dark: #b6040c;
+    --secondary: #d9e2f2;
+    --secondary-dark: #f3f7ff;
+    --text: #eef3f9;
+    --muted: #9aa6b5;
+    --border: rgba(255, 255, 255, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    background:
+        radial-gradient(circle at top left, rgba(227, 5, 16, 0.16), transparent 22%),
+        radial-gradient(circle at 85% 15%, rgba(255, 255, 255, 0.06), transparent 18%),
+        radial-gradient(circle at 50% 0%, rgba(227, 5, 16, 0.06), transparent 30%),
+        linear-gradient(180deg, #070a0f 0%, var(--bg-page) 100%);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a { color: inherit; }
+
+section { scroll-margin-top: 88px; }
