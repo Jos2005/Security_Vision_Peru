@@ -165,6 +165,16 @@
     .hero-industries { grid-template-columns: 1fr; }
     .industry-card h3 { font-size: 0.9rem; }
 
+    .hero-btns {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hero-btns a {
+        width: 100%;
+        text-align: center;
+    }
+
     .cctv-content h2 { font-size: 1.7rem; }
     .cctv-content p { font-size: 0.95rem; }
     .cctv-grid { gap: 30px; }
