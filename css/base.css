@@ -1,15 +1,38 @@
+/* ═══════════════════════════════════════════════════════════════
+   SECURITY VISION PRO — Design System & Base
+   ═══════════════════════════════════════════════════════════════ */
+
 :root {
-    --bg-page: #070a0f;
-    --bg-surface: #0e131b;
+    --bg-page: #060910;
+    --bg-surface: #0c1018;
     --bg-soft: #111827;
-    --bg-card: #111827;
+    --bg-card: rgba(15, 20, 35, 0.65);
+    --bg-card-solid: #0f1423;
     --primary: #e30510;
+    --primary-glow: rgba(227, 5, 16, 0.35);
     --primary-dark: #b6040c;
+    --primary-light: #ff2d38;
     --secondary: #d9e2f2;
     --secondary-dark: #f3f7ff;
+    --accent: #ff4757;
     --text: #eef3f9;
-    --muted: #9aa6b5;
-    --border: rgba(255, 255, 255, 0.08);
+    --muted: #8a95a8;
+    --border: rgba(255, 255, 255, 0.07);
+    --border-glow: rgba(227, 5, 16, 0.2);
+    --glass: rgba(12, 16, 24, 0.72);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.15);
+    --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.25);
+    --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.35);
+    --shadow-glow: 0 0 40px rgba(227, 5, 16, 0.15);
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 20px;
+    --radius-xl: 28px;
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 * {
@@ -36,10 +59,10 @@ html { scroll-behavior: smooth; }
 
 body {
     background:
-        radial-gradient(circle at top left, rgba(227, 5, 16, 0.16), transparent 22%),
-        radial-gradient(circle at 85% 15%, rgba(255, 255, 255, 0.06), transparent 18%),
-        radial-gradient(circle at 50% 0%, rgba(227, 5, 16, 0.06), transparent 30%),
-        linear-gradient(180deg, #070a0f 0%, var(--bg-page) 100%);
+        radial-gradient(ellipse 80% 50% at 20% 0%, rgba(227, 5, 16, 0.12), transparent),
+        radial-gradient(ellipse 60% 40% at 80% 10%, rgba(100, 120, 255, 0.04), transparent),
+        radial-gradient(ellipse 50% 50% at 50% 0%, rgba(227, 5, 16, 0.05), transparent),
+        linear-gradient(180deg, #060910 0%, var(--bg-page) 100%);
     color: var(--text);
     line-height: 1.6;
     overflow-x: hidden;
@@ -54,3 +77,181 @@ body {
 a { color: inherit; }
 
 section { scroll-margin-top: 88px; }
+
+/* ─── Scroll Reveal Animations ─── */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-left.revealed {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-right.revealed {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-scale {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-scale.revealed {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Stagger children animation delays */
+.stagger-children > *:nth-child(1) { transition-delay: 0s; }
+.stagger-children > *:nth-child(2) { transition-delay: 0.1s; }
+.stagger-children > *:nth-child(3) { transition-delay: 0.2s; }
+.stagger-children > *:nth-child(4) { transition-delay: 0.3s; }
+.stagger-children > *:nth-child(5) { transition-delay: 0.4s; }
+.stagger-children > *:nth-child(6) { transition-delay: 0.5s; }
+
+/* ─── Page Loader ─── */
+.page-loader {
+    position: fixed;
+    inset: 0;
+    background: var(--bg-page);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.page-loader.loaded {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.loader-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.loader-content img {
+    height: 60px;
+    animation: loaderPulse 1.5s ease-in-out infinite;
+}
+
+.loader-bar {
+    width: 160px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.loader-bar::after {
+    content: '';
+    display: block;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary), var(--primary-light));
+    border-radius: 4px;
+    animation: loaderSlide 1.2s ease-in-out infinite;
+}
+
+@keyframes loaderPulse {
+    0%, 100% { opacity: 0.5; transform: scale(0.96); }
+    50% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes loaderSlide {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(400%); }
+}
+
+/* ─── WhatsApp Float Button ─── */
+.whatsapp-float {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 6px 24px rgba(37, 211, 102, 0.4);
+    transition: var(--transition-spring);
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.12) translateY(-3px);
+    box-shadow: 0 10px 36px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-float::before {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    border: 2px solid rgba(37, 211, 102, 0.3);
+    animation: whatsappPing 2s ease-in-out infinite;
+}
+
+@keyframes whatsappPing {
+    0%, 100% { transform: scale(1); opacity: 0.6; }
+    50% { transform: scale(1.15); opacity: 0; }
+}
+
+/* ─── Selection ─── */
+::selection {
+    background: rgba(227, 5, 16, 0.3);
+    color: #fff;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-page);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(227, 5, 16, 0.3);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(227, 5, 16, 0.5);
+}

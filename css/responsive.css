@@ -1,6 +1,29 @@
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE — Breakpoints & Adaptive Design
+   ═══════════════════════════════════════════════════════════════ */
+
+@media (max-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .testimonial-card {
+        flex: 0 0 calc(50% - 12px);
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+}
+
 @media (max-width: 768px) {
     header {
-        padding: 15px 0;
+        padding: 14px 0;
+    }
+
+    header.scrolled {
+        padding: 10px 0;
     }
 
     .contact-grid,
@@ -10,7 +33,7 @@
         grid-template-columns: 1fr;
     }
 
-    h1 { font-size: 2.5rem; }
+    h1 { font-size: 2.4rem; letter-spacing: -1px; }
 
     nav.container {
         position: relative;
@@ -25,23 +48,25 @@
     .nav-links {
         display: flex;
         position: absolute;
-        top: calc(100% + 12px);
+        top: calc(100% + 8px);
         left: 0;
         right: 0;
-        background: #ffffff;
-        border: 1px solid rgba(0, 0, 0, 0.08);
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(0, 0, 0, 0.06);
         flex-direction: column;
-        align-items: flex-start;
-        gap: 14px;
-        padding: 18px 20px;
+        align-items: stretch;
+        gap: 4px;
+        padding: 16px;
         margin-left: 0;
         opacity: 0;
         visibility: hidden;
         transform: translateY(-10px);
         pointer-events: none;
-        transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
         z-index: 20;
-        box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 14px 40px rgba(0, 0, 0, 0.1);
+        border-radius: var(--radius-md);
     }
 
     nav.nav-open .nav-links {
@@ -57,45 +82,124 @@
         width: 100%;
     }
 
-    .nav-links a,
+    .nav-links a {
+        width: 100%;
+        display: block;
+        padding: 12px 16px;
+        border-radius: var(--radius-sm);
+    }
+
+    .nav-links a:hover {
+        background: rgba(227, 5, 16, 0.04);
+    }
+
+    .nav-links a::after {
+        display: none;
+    }
+
     .btn-contact-nav {
         width: 100%;
+        text-align: center;
+        margin-top: 4px;
     }
 
     .logo {
         margin-left: 0;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    /* Testimonials */
+    .testimonial-card {
+        flex: 0 0 85%;
     }
 }
 
 @media (max-width: 768px) {
     .hero {
         min-height: auto;
-        padding: 100px 0;
+        padding: 120px 0 80px;
     }
 
-    h1 { line-height: 1.08; }
-    .logo-img { height: 42px; }
+    h1 { line-height: 1.1; }
+    .logo-img { height: 40px; }
 
-    .hero .container { gap: 40px; }
+    header.scrolled .logo-img { height: 36px; }
+
+    .hero .container { gap: 36px; }
     .hero-industries { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+    .section-title h2 { font-size: 1.8rem; }
+    .about-content h2 { font-size: 2rem; }
+    .cctv-content h2 { font-size: 2rem; }
 }
 
 @media (max-width: 520px) {
     .container {
-        padding: 0 24px;
+        padding: 0 20px;
     }
 
     .services.container {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h1 { font-size: 2rem; }
+
+    .hero {
+        padding: 110px 0 60px;
     }
 
     .hero-industries { grid-template-columns: 1fr; }
-    .industry-card h3 { font-size: 1rem; }
+    .industry-card h3 { font-size: 0.9rem; }
 
-    .cctv-content h2 { font-size: 1.8rem; }
+    .cctv-content h2 { font-size: 1.7rem; }
     .cctv-content p { font-size: 0.95rem; }
     .cctv-grid { gap: 30px; }
-    
-    section { scroll-margin-top: 60px; }
+
+    section { scroll-margin-top: 70px; }
+
+    .services, .about, .contact, .testimonials {
+        padding: 70px 0;
+    }
+
+    .card {
+        padding: 28px 22px;
+    }
+
+    .stat-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .whatsapp-float {
+        width: 52px;
+        height: 52px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 1.4rem;
+    }
+
+    .btn-primary {
+        padding: 13px 28px;
+        font-size: 0.75rem;
+    }
+
+    .testimonial-card {
+        flex: 0 0 92%;
+    }
+
+    .footer-social a {
+        width: 36px;
+        height: 36px;
+    }
 }

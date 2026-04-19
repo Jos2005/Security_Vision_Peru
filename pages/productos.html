@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Security Vision Pro — Catálogo de Equipos</title>
+    <meta name="description" content="Explora nuestro catálogo de productos: cámaras IP, DVR, NVR, control de acceso, alarmas y accesorios de seguridad electrónica.">
+    <link rel="icon" type="image/x-icon" href="../img/icono.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <!-- Page Loader -->
+    <div class="page-loader" aria-hidden="true">
+        <div class="loader-content">
+            <img src="../img/logo.png" alt="Cargando...">
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="../index.html" aria-label="Volver al inicio">
+                    <img src="../img/logo.png" alt="Security Vision" class="logo-img">
+                </a>
+            </div>
+            <button type="button" class="menu-toggle" aria-label="Abrir menu principal" aria-expanded="false" aria-controls="mainNav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="mainNav">
+                <li><a href="../index.html#inicio">INICIO</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="productos.html">PRODUCTOS</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><button type="button" class="btn-contact-nav" id="contactBtn">SOLICITAR COTIZACIÓN</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <canvas id="particles-canvas"></canvas>
+            <div class="container">
+                <div class="hero-text">
+                    <span class="badge">🛒 EQUIPOS DE ALTA GAMA</span>
+                    <h1>NUESTRO CATÁLOGO DE <span>PRODUCTOS</span>.</h1>
+                    <p>Contamos con equipos de seguridad de las mejores marcas del mercado. Calidad, durabilidad y tecnología avanzada para tu protección.</p>
+                    <div class="hero-btns">
+                        <a href="#catalogo-productos" class="btn-primary"><i class="ri-store-2-line"></i> EXPLORAR PRODUCTOS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services container" id="catalogo-productos">
+            <div class="section-title reveal">
+                <h2>CATEGORÍAS DE PRODUCTOS</h2>
+                <p>Equipamiento profesional para implementaciones de seguridad de cualquier escala.</p>
+            </div>
+            <div class="grid stagger-children">
+                <div class="card reveal">
+                    <i class="ri-vidicon-line"></i>
+                    <h3>Cámaras de Seguridad (CCTV / IP)</h3>
+                    <p>Cámaras tipo domo, bala y PTZ. Alta resolución (1080p, 4K), visión nocturna a color y tecnología IP y analógica.</p>
+                </div>
+                <div class="card reveal">
+                    <i class="ri-hard-drive-2-line"></i>
+                    <h3>Grabadores (DVR y NVR)</h3>
+                    <p>Sistemas de grabación de 4, 8, 16 y 32 canales con soporte para analíticas de video, detección de movimiento y almacenamiento optimizado.</p>
+                </div>
+                <div class="card reveal">
+                    <i class="ri-box-3-line"></i>
+                    <h3>Kits de Videovigilancia</h3>
+                    <p>Soluciones listas para instalar que incluyen cámaras, grabador, cableado, fuentes y disco duro. Ideales para hogares y pequeños negocios.</p>
+                </div>
+                <div class="card reveal">
+                    <i class="ri-fingerprint-line"></i>
+                    <h3>Control de Acceso</h3>
+                    <p>Lectores biométricos, tarjetas de proximidad, cerraduras electromagnéticas y paneles de control para gestionar el ingreso a tus instalaciones.</p>
+                </div>
+                <div class="card reveal">
+                    <i class="ri-alarm-warning-line"></i>
+                    <h3>Alarmas y Sensores</h3>
+                    <p>Sistemas de alarma contra intrusión, sensores de movimiento, contactos magnéticos para puertas y sirenas de alta potencia.</p>
+                </div>
+                <div class="card reveal">
+                    <i class="ri-plug-line"></i>
+                    <h3>Accesorios y Conectividad</h3>
+                    <p>Cables UTP, baluns, fuentes de poder centralizadas, discos duros especiales para CCTV (Purple/SkyHawk) y switches PoE.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cctv-solution">
+            <div class="container cctv-grid">
+                <div class="cctv-image reveal-left">
+                    <img src="../img/instalacion-camara-de-seguridad-wifi.jpg" alt="Equipos de seguridad de marcas reconocidas" loading="lazy">
+                </div>
+                <div class="cctv-content reveal-right">
+                    <h2>TRABAJAMOS CON <span>LAS MEJORES MARCAS</span></h2>
+                    <p>Para garantizar la durabilidad y eficacia de nuestros sistemas, somos integradores de las marcas líderes a nivel mundial en seguridad electrónica. Todos nuestros productos cuentan con garantía oficial y soporte técnico especializado.</p>
+                    <a href="contacto.html" class="btn-primary"><i class="ri-shopping-cart-2-line"></i> SOLICITAR CATÁLOGO PDF</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="../img/logo.png" alt="Security Vision Pro">
+                    <p>Soluciones de videovigilancia y seguridad electrónica de última generación para hogares, negocios e instituciones en Sullana y todo el Perú.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="ri-tiktok-fill"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>NAVEGACIÓN</h4>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACTO</h4>
+                    <ul>
+                        <li><a href="mailto:soporte@securityvision.pe"><i class="ri-mail-line"></i> soporte@securityvision.pe</a></li>
+                        <li><a href="tel:+51999999999"><i class="ri-phone-line"></i> +51 999 999 999</a></li>
+                        <li><a href="#"><i class="ri-map-pin-line"></i> Sullana, Piura, Perú</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Security Vision Pro. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/51999999999?text=Hola%2C%20quiero%20información%20sobre%20los%20productos%20y%20equipos" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <i class="ri-whatsapp-line"></i>
+    </a>
+
+    <script src="../script.js"></script>
+</body>
+</html>
