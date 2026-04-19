@@ -55,7 +55,11 @@ p {
     text-align: left;
 }
 
-html { scroll-behavior: smooth; }
+html { 
+    scroll-behavior: smooth; 
+    overflow-x: hidden;
+    max-width: 100%;
+}
 
 body {
     background:
@@ -66,6 +70,7 @@ body {
     color: var(--text);
     line-height: 1.6;
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 .container {
