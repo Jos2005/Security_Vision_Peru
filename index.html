@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Security Vision Pro | Vigilancia Inteligente</title>
     <link rel="icon" type="image/x-icon" href="img/icono.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,16 +16,21 @@
     <header>
         <nav class="container">
             <div class="logo">
-                <img src="img/logo.svg" alt="Security Vision" class="logo-img">
+                <img src="img/logo.png" alt="Security Vision" class="logo-img">
             </div>
-            <ul class="nav-links">
+            <button type="button" class="menu-toggle" aria-label="Abrir menu principal" aria-expanded="false" aria-controls="mainNav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="mainNav">
                 <li><a href="#inicio">INICIO</a></li>
                 <li><a href="pages/servicios.html">SERVICIOS</a></li>
                 <li><a href="#productos">PRODUCTOS</a></li>
-                <li><a href="#nosotros">NOSOTROS</a></li>
+                <li><a href="pages/nosotros.html">NOSOTROS</a></li>
 
                 
-                <li><button type="button" class="btn-contact-nav" id="contactBtn">CONTACTO</button></li>
+                <li><button type="button" class="btn-contact-nav" id="contactBtn">SOLICITAR COTIZACIÓN</button></li>
             </ul>
         </nav>
     </header>
@@ -30,12 +38,42 @@
     <section id="inicio" class="hero">
         <div class="container">
             <div class="hero-text">
-                <span class="badge">SISTEMAS DE GRADO MILITAR</span>
                 <h1>VIGILANCIA <span>INTELIGENTE</span> PARA EL MUNDO REAL.</h1>
                 <p>Implementamos analítica de IA para detener incidentes antes de que ocurran. Monitoreo avanzado 24/7 en Sullana y todo el país.</p>
                 <div class="hero-btns">
                     <a href="#servicios" class="btn-primary">EXPLORAR TECNOLOGÍA</a>
                 </div>
+            </div>
+            <div class="hero-industries" aria-label="Sectores protegidos">
+                <article class="industry-card">
+                    <img src="img/industria/1.webp" alt="Seguridad para hoteles" loading="lazy">
+                    <h3>HOTELES</h3>
+                </article>
+                <article class="industry-card">
+                    <img src="img/industria/2.webp" alt="Seguridad para propiedades" loading="lazy">
+                    <h3>PROPIEDADES</h3>
+                </article>
+                <article class="industry-card">
+                    <img src="img/industria/3.webp" alt="Seguridad para distribución" loading="lazy">
+                    <h3>DISTRIBUCIÓN</h3>
+                </article>
+                <article class="industry-card">
+                    <img src="img/industria/4.webp" alt="Seguridad para colegios" loading="lazy">
+                    <h3>COLEGIOS</h3>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="cctv-solution">
+        <div class="container cctv-grid">
+            <div class="cctv-image">
+                <img src="img/instalacion-camara-de-seguridad-wifi.jpg" alt="Instalación de cámara de seguridad WiFi" loading="lazy">
+            </div>
+            <div class="cctv-content">
+                <h2>VIGILANCIA INTEGRAL <span>EN UNA PLATAFORMA</span></h2>
+                <p>Con nuestro sistema CCTV de última generación, obtén monitoreo en tiempo real de todos tus espacios. Protege tu hogar, negocio o infraestructura con grabación de alta definición, almacenamiento seguro en la nube y alertas instantáneas ante cualquier evento sospechoso. Acceso remoto disponible 24/7 desde cualquier dispositivo.</p>
+                <a href="pages/contacto.html" class="btn-primary">SOLICITAR COTIZACIÓN</a>
             </div>
         </div>
     </section>

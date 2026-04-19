@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios | Security Vision Pro</title>
     <link rel="icon" type="image/x-icon" href="../img/icono.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
 </head>
@@ -13,14 +16,19 @@
         <nav class="container">
             <div class="logo">
                 <a href="../index.html" aria-label="Volver al inicio">
-                    <img src="../img/logo.svg" alt="Security Vision" class="logo-img">
+                    <img src="../img/logo.png" alt="Security Vision" class="logo-img">
                 </a>
             </div>
-            <ul class="nav-links">
+            <button type="button" class="menu-toggle" aria-label="Abrir menu principal" aria-expanded="false" aria-controls="mainNav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="mainNav">
                 <li><a href="../index.html#inicio">INICIO</a></li>
                 <li><a href="servicios.html">SERVICIOS</a></li>
-                <li><a href="../index.html#nosotros">NOSOTROS</a></li>
-                <li><button type="button" class="btn-contact-nav" id="contactBtn">CONTACTO</button></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><button type="button" class="btn-contact-nav" id="contactBtn">SOLICITAR COTIZACIÓN</button></li>
             </ul>
         </nav>
     </header>
@@ -81,19 +89,24 @@
         <section class="about">
             <div class="container grid">
                 <div class="about-content">
-                    <span class="badge">IMPLEMENTACION</span>
-                    <h2>UN FLUJO CLARO <span>DE TRABAJO</span>.</h2>
-                    <p>Todo el proceso está pensado para una simulación ordenada y presentable: revisión, instalación, mantenimiento, conectividad y soporte técnico.</p>
+                    <span class="badge">DETALLE DEL SERVICIO</span>
+                    <h2>¿DE QUÉ CONSTA <span>EL SERVICIO?</span></h2>
+                    <p>Estos son los pasos y actividades que incluye nuestro servicio de videovigilancia CCTV para hogares, negocios e instituciones.</p>
                     <ul class="features-list">
-                        <li><i class="ri-checkbox-circle-fill"></i> Evaluación inicial de necesidades.</li>
-                        <li><i class="ri-checkbox-circle-fill"></i> Diseño de solución según ambiente.</li>
-                        <li><i class="ri-checkbox-circle-fill"></i> Instalación, configuración y conexión remota.</li>
-                        <li><i class="ri-checkbox-circle-fill"></i> Soporte, mantenimiento y capacitación.</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> Diagnóstico de las necesidades de seguridad del cliente y evaluación del espacio a proteger.</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> Revisión del lugar de instalación para definir puntos estratégicos de cámaras y cobertura.</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> Selección e instalación de equipos de videovigilancia CCTV según el ambiente y requerimiento.</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> Configuración del sistema de monitoreo, incluyendo conexión a red y acceso remoto desde celular o computadora.</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> Instalación y ajuste del almacenamiento de grabaciones (DVR/NVR o nube) para respaldo de información.</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> Configuración básica de seguridad para proteger el acceso a cámaras y datos.</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> Pruebas de funcionamiento general del sistema para asegurar su correcto desempeño.</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> Capacitación al cliente sobre el uso del sistema y recomendaciones para su correcto manejo.</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> Soporte técnico y mantenimiento posterior para resolver fallas o mejoras del sistema.</li>
                     </ul>
                 </div>
                 <div class="about-stats">
                     <div class="stat-card"><h3>24/7</h3><p>Monitoreo</p></div>
-                    <div class="stat-card"><h3>6</h3><p>Servicios Principales</p></div>
+                    <div class="stat-card"><h3>9</h3><p>Puntos del servicio</p></div>
                 </div>
             </div>
         </section>

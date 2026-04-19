@@ -1,5 +1,21 @@
 const contactForm = document.querySelector('.contact-form');
 const contactBtn = document.getElementById('contactBtn');
+const nav = document.querySelector('header nav');
+const menuToggle = document.querySelector('.menu-toggle');
+
+if (menuToggle && nav) {
+    menuToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        menuToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    document.querySelectorAll('.nav-links a, .nav-links .btn-contact-nav').forEach((item) => {
+        item.addEventListener('click', () => {
+            nav.classList.remove('nav-open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+        });
+    });
+}
 
 if (contactBtn) {
     contactBtn.addEventListener('click', () => {

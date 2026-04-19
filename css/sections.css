@@ -72,13 +72,13 @@
 
 .about-stats {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 16px;
 }
 
 .stat-card {
     background: var(--bg-card);
-    padding: 30px;
+    padding: 24px;
     text-align: center;
     border-left: 4px solid var(--primary);
     border-radius: 16px;
@@ -88,6 +88,11 @@
 .stat-card h3 {
     color: #fff;
     font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.stat-card p {
+    font-size: 0.95rem;
 }
 
 .contact { padding: 100px 0; }
@@ -197,6 +202,50 @@
     font-weight: bold;
     cursor: pointer;
     border-radius: 14px;
+}
+
+.cctv-solution {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.cctv-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.cctv-image img {
+    width: 100%;
+    height: auto;
+}
+
+.cctv-content .badge {
+    display: none;
+}
+
+.cctv-content h2 {
+    font-size: 2.4rem;
+    line-height: 1.08;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+}
+
+.cctv-content h2 span {
+    color: var(--primary);
+    font-family: 'Orbitron', sans-serif;
+}
+
+.cctv-content p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #525252;
+    margin-bottom: 40px;
+}
+
+.cctv-content .btn-primary {
+    display: inline-block;
 }
 
 footer {

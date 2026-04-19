@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contacto | Security Vision Pro</title>
 	<link rel="icon" type="image/x-icon" href="../img/icono.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 	<link rel="stylesheet" href="../styles.css">
 </head>
@@ -13,13 +16,18 @@
 		<nav class="container">
 			<div class="logo">
 				<a href="../index.html" aria-label="Volver al inicio">
-					<img src="../img/logo.svg" alt="Security Vision" class="logo-img">
+					<img src="../img/logo.png" alt="Security Vision" class="logo-img">
 				</a>
 			</div>
-			<ul class="nav-links">
+			<button type="button" class="menu-toggle" aria-label="Abrir menu principal" aria-expanded="false" aria-controls="mainNav">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<ul class="nav-links" id="mainNav">
 				<li><a href="../index.html#inicio">INICIO</a></li>
 				<li><a href="../index.html#servicios">SERVICIOS</a></li>
-				<li><a href="../index.html#nosotros">NOSOTROS</a></li>
+				<li><a href="nosotros.html">NOSOTROS</a></li>
 				<li><a href="contacto.html">CONTACTO</a></li>
 			</ul>
 		</nav>

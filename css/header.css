@@ -1,8 +1,8 @@
 header {
-    background: #000000;
+    background: #ffffff;
     backdrop-filter: blur(14px);
-    border-bottom: 1px solid var(--border);
-    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 22px 0;
     position: static;
     width: 100%;
     box-shadow: 0 8px 30px rgba(12, 24, 62, 0.06);
@@ -21,7 +21,7 @@ nav {
 }
 
 .logo-img {
-    height: 65px;
+    height: 58px;
     width: auto;
     display: block;
 }
@@ -37,10 +37,11 @@ nav {
 }
 
 .nav-links a {
-    color: var(--secondary);
+    color: #1f2a36;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 700;
+    font-family: 'Orbitron', sans-serif;
     letter-spacing: 0.03em;
     transition: 0.3s ease;
 }
@@ -52,6 +53,39 @@ nav {
     margin-right: 20px;
 }
 
+.menu-toggle {
+    display: none;
+    width: 46px;
+    height: 46px;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    background: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #111111;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+nav.nav-open .menu-toggle span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+nav.nav-open .menu-toggle span:nth-child(2) {
+    opacity: 0;
+}
+
+nav.nav-open .menu-toggle span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 .btn-contact-nav {
     background: linear-gradient(135deg, var(--primary), var(--primary-dark));
     border: 1px solid rgba(227, 5, 16, 0.55);
@@ -60,6 +94,7 @@ nav {
     border-radius: 0px;
     cursor: pointer;
     font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
     transition: 0.3s ease;
 }
 

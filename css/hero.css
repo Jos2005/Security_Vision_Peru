@@ -1,8 +1,17 @@
 .hero {
     min-height: calc(100vh - 88px);
+    padding: 56px 0;
     display: flex;
     align-items: center;
-    background: transparent;
+    background:
+        linear-gradient(rgba(7, 10, 15, 0.68), rgba(7, 10, 15, 0.68)),
+        url('../img/turismo.jpg') center/cover no-repeat;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
 }
 
 .badge {
@@ -30,7 +39,10 @@ h1 {
     color: var(--secondary-dark);
 }
 
-h1 span { color: var(--primary); }
+h1 span { 
+    color: var(--primary); 
+    font-family: 'Orbitron', sans-serif;
+}
 
 .hero-text p {
     font-size: 1.2rem;
@@ -44,6 +56,34 @@ h1 span { color: var(--primary); }
 .hero-btns {
     display: flex;
     justify-content: center;
+}
+
+.hero-industries {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.industry-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.industry-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+}
+
+.industry-card h3 {
+    text-align: center;
+    font-size: 1.12rem;
+    letter-spacing: 0.06em;
+    color: #e7eef8;
+    font-weight: 800;
 }
 
 .btn-primary {
