@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios | Security Vision Pro</title>
-    <link rel="icon" type="image/x-icon" href="../img/icono.ico">
+    <title>Servicios | Security Vision Pro — Videovigilancia y CCTV</title>
+    <meta name="description" content="Conoce los servicios de Security Vision Pro: instalación de cámaras de seguridad, monitoreo HD, mantenimiento, conectividad remota y capacitación.">
+    <link rel="icon" type="image/x-icon" href="../img/brand/icono.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -12,11 +13,20 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+
+    <!-- Page Loader -->
+    <div class="page-loader" aria-hidden="true">
+        <div class="loader-content">
+            <img src="../img/brand/logo.png" alt="Cargando...">
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
     <header>
         <nav class="container">
             <div class="logo">
                 <a href="../index.html" aria-label="Volver al inicio">
-                    <img src="../img/logo.png" alt="Security Vision" class="logo-img">
+                    <img src="../img/brand/logo.png" alt="Security Vision" class="logo-img">
                 </a>
             </div>
             <button type="button" class="menu-toggle" aria-label="Abrir menu principal" aria-expanded="false" aria-controls="mainNav">
@@ -27,6 +37,7 @@
             <ul class="nav-links" id="mainNav">
                 <li><a href="../index.html#inicio">INICIO</a></li>
                 <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="productos.html">PRODUCTOS</a></li>
                 <li><a href="nosotros.html">NOSOTROS</a></li>
                 <li><button type="button" class="btn-contact-nav" id="contactBtn">SOLICITAR COTIZACIÓN</button></li>
             </ul>
@@ -35,50 +46,89 @@
 
     <main>
         <section class="hero">
+            <canvas id="particles-canvas"></canvas>
             <div class="container">
                 <div class="hero-text">
-                    <span class="badge">SOLUCIONES INTEGRALES</span>
+
                     <h1>NUESTROS <span>SERVICIOS</span> DE SEGURIDAD.</h1>
                     <p>Diseñamos e integramos soluciones de seguridad adaptadas a tu proyecto: cámaras, monitoreo, mantenimiento, conectividad, respaldo y capacitación.</p>
                     <div class="hero-btns">
-                        <a href="#catalogo-servicios" class="btn-primary">VER CATALOGO</a>
+                        <a href="#catalogo-servicios" class="btn-primary"><i class="ri-list-check-3"></i> VER CATÁLOGO</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="services container" id="catalogo-servicios">
-            <div class="section-title">
-                <h2>CATALOGO DE SERVICIOS</h2>
+            <div class="section-title reveal">
+                <h2>CATÁLOGO DE SERVICIOS</h2>
                 <p>Estos son los servicios que ofrecemos para empresas, residencias e infraestructura crítica.</p>
             </div>
-            <div class="grid">
-                <div class="card">
+            <div class="grid stagger-children">
+                <div class="card reveal">
+                    <div class="service-card-img">
+                        <img src="../img/content/instalacion-camara-de-seguridad-wifi.jpg" alt="Instalación de cámaras">
+                    </div>
                     <i class="ri-camera-3-line"></i>
                     <h3>Instalación de cámaras de seguridad</h3>
                     <p>Instalamos cámaras de seguridad para interiores, exteriores y perímetros con una configuración profesional.</p>
                 </div>
-                <div class="card">
+                <div class="card reveal">
+                    <div class="service-card-img">
+                        <div class="service-card-icon-overlay">
+                            <i class="ri-monitor-line"></i>
+                        </div>
+                    </div>
                     <i class="ri-monitor-line"></i>
                     <h3>Sistemas de monitoreo de alta definición</h3>
                     <p>Implementamos monitoreo de alta definición para obtener una visualización clara, estable y detallada en tiempo real.</p>
                 </div>
-                <div class="card">
+                <div class="card reveal">
+                    <div class="service-card-img">
+                        <div class="service-card-icon-overlay">
+                            <i class="ri-tools-line"></i>
+                        </div>
+                    </div>
                     <i class="ri-tools-line"></i>
                     <h3>Mantenimiento preventivo y correctivo</h3>
                     <p>Realizamos mantenimiento preventivo y correctivo para asegurar el funcionamiento continuo de tus equipos.</p>
                 </div>
-                <div class="card">
+                <div class="card reveal">
+                    <div class="service-card-img">
+                        <div class="service-card-icon-overlay">
+                            <i class="ri-wifi-line"></i>
+                        </div>
+                    </div>
                     <i class="ri-wifi-line"></i>
                     <h3>Conectividad y gestión remota</h3>
                     <p>Configuramos acceso remoto y conectividad estable para supervisar tus cámaras desde cualquier lugar.</p>
                 </div>
-                <div class="card">
+                <div class="card reveal">
+                    <div class="service-card-img">
+                        <div class="service-card-icon-overlay">
+                            <i class="ri-database-2-line"></i>
+                        </div>
+                    </div>
                     <i class="ri-database-2-line"></i>
                     <h3>Almacenamiento y respaldo de datos</h3>
                     <p>Protegemos tus grabaciones con almacenamiento y respaldo para evitar pérdida de información importante.</p>
                 </div>
-                <div class="card">
+                <div class="card reveal">
+                    <div class="service-card-img">
+                        <div class="service-card-icon-overlay">
+                            <i class="ri-plant-line"></i>
+                        </div>
+                    </div>
+                    <i class="ri-plant-line"></i>
+                    <h3>Seguridad Agroindustrial</h3>
+                    <p>Especialistas en vigilancia de fundos, perímetros extensos y centros de empaque en toda la región Piura.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="service-card-img">
+                        <div class="service-card-icon-overlay">
+                            <i class="ri-graduation-cap-line"></i>
+                        </div>
+                    </div>
                     <i class="ri-graduation-cap-line"></i>
                     <h3>Capacitación de uso</h3>
                     <p>Brindamos capacitación para el uso correcto de las cámaras y sus funciones de visualización y control.</p>
@@ -88,8 +138,8 @@
 
         <section class="about">
             <div class="container grid">
-                <div class="about-content">
-                    <span class="badge">DETALLE DEL SERVICIO</span>
+                <div class="about-content reveal-left">
+
                     <h2>¿DE QUÉ CONSTA <span>EL SERVICIO?</span></h2>
                     <p>Estos son los pasos y actividades que incluye nuestro servicio de videovigilancia CCTV para hogares, negocios e instituciones.</p>
                     <ul class="features-list">
@@ -104,20 +154,26 @@
                         <li><i class="ri-checkbox-circle-fill"></i> Soporte técnico y mantenimiento posterior para resolver fallas o mejoras del sistema.</li>
                     </ul>
                 </div>
-                <div class="about-stats">
-                    <div class="stat-card"><h3>24/7</h3><p>Monitoreo</p></div>
-                    <div class="stat-card"><h3>9</h3><p>Puntos del servicio</p></div>
+                <div class="about-stats reveal-right">
+                    <div class="stat-card">
+                        <h3 data-count="24" data-suffix="/7">0</h3>
+                        <p>Monitoreo</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 data-count="9" data-suffix="">0</h3>
+                        <p>Puntos del servicio</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="contact container">
-            <div class="section-title">
-                <h2>QUIERES UNA COTIZACION</h2>
+            <div class="section-title reveal">
+                <h2>¿QUIERES UNA COTIZACIÓN?</h2>
                 <p>Escríbenos y coordinamos la propuesta que mejor se adapte a tu proyecto.</p>
             </div>
             <div class="contact-grid">
-                <div class="card">
+                <div class="card reveal-left">
                     <div class="info-item">
                         <i class="ri-shield-check-line"></i>
                         <div>
@@ -128,8 +184,8 @@
                     <div class="info-item">
                         <i class="ri-map-pin-line"></i>
                         <div>
-                            <strong>Atencion</strong>
-                            <p>Sullana - Lima, Peru</p>
+                            <strong>Atención</strong>
+                            <p>Sullana - Lima, Perú</p>
                         </div>
                     </div>
                     <div class="info-item">
@@ -140,18 +196,53 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <a href="contacto.html" class="btn-primary" style="width:100%;">IR A CONTACTO</a>
+                <div class="card reveal-right" style="display:flex; align-items:center; justify-content:center;">
+                    <a href="contacto.html" class="btn-primary" style="width:100%; text-align:center;"><i class="ri-chat-1-line"></i> IR A CONTACTO</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>© 2026 Security Vision Pro. Servicios integrados en modo simulacion.</p>
+        <div class="container footer-content">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="../img/brand/logo.png" alt="Security Vision Pro">
+                    <p>Soluciones de videovigilancia y seguridad electrónica de última generación para hogares, negocios e instituciones en Sullana y todo el Perú.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="ri-tiktok-fill"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>NAVEGACIÓN</h4>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACTO</h4>
+                    <ul>
+                        <li><a href="mailto:soporte@securityvision.pe"><i class="ri-mail-line"></i> soporte@securityvision.pe</a></li>
+                        <li><a href="tel:+51999999999"><i class="ri-phone-line"></i> +51 999 999 999</a></li>
+                        <li><a href="#"><i class="ri-map-pin-line"></i> Sullana, Piura, Perú</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Security Vision Pro. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/51999999999?text=Hola%2C%20quiero%20información%20sobre%20cámaras%20de%20seguridad" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <i class="ri-whatsapp-line"></i>
+    </a>
 
     <script src="../script.js"></script>
 </body>

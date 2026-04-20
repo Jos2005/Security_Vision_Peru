@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Security Vision Pro — Catálogo de Equipos</title>
+    <meta name="description" content="Explora nuestro catálogo de productos: cámaras IP, DVR, NVR, control de acceso, alarmas y accesorios de seguridad electrónica.">
+    <link rel="icon" type="image/x-icon" href="../img/brand/icono.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <!-- Page Loader -->
+    <div class="page-loader" aria-hidden="true">
+        <div class="loader-content">
+            <img src="../img/brand/logo.png" alt="Cargando...">
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="../index.html" aria-label="Volver al inicio">
+                    <img src="../img/brand/logo.png" alt="Security Vision" class="logo-img">
+                </a>
+            </div>
+            <button type="button" class="menu-toggle" aria-label="Abrir menu principal" aria-expanded="false" aria-controls="mainNav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="mainNav">
+                <li><a href="../index.html#inicio">INICIO</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="productos.html">PRODUCTOS</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><button type="button" class="btn-contact-nav" id="contactBtn">SOLICITAR COTIZACIÓN</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <canvas id="particles-canvas"></canvas>
+            <div class="container">
+                <div class="hero-text">
+
+                    <h1>NUESTRO CATÁLOGO DE <span>PRODUCTOS</span>.</h1>
+                    <p>Contamos con equipos de seguridad de las mejores marcas del mercado. Calidad, durabilidad y tecnología avanzada para tu protección.</p>
+                    <div class="hero-btns">
+                        <a href="#catalogo-productos" class="btn-primary"><i class="ri-store-2-line"></i> EXPLORAR PRODUCTOS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="shop-section container" id="catalogo-productos">
+            <div class="section-title reveal">
+                <h2>TIENDA DE SEGURIDAD</h2>
+                <p>Equipos profesionales con garantía oficial y soporte técnico especializado.</p>
+            </div>
+
+            <!-- Shop Filters -->
+            <div class="shop-filters reveal">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="camaras">Cámaras</button>
+                <button class="filter-btn" data-filter="grabadores">Grabadores</button>
+                <button class="filter-btn" data-filter="kits">Kits</button>
+            </div>
+
+            <div class="product-grid stagger-children">
+                <!-- Producto 1 -->
+                <div class="product-card reveal" data-category="camaras">
+                    <div class="product-badge">Top Ventas</div>
+                    <div class="product-img">
+                        <img src="../img/products/p1.png" alt="Cámara IP 4K">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">CCTV / IP</div>
+                        <h3>Cámara IP Dome 4K Pro Ultra</h3>
+                        <div class="product-rating">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <span>(48)</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="old-price">S/ 450</span>
+                                <span class="current-price">S/ 389</span>
+                            </div>
+                            <a href="https://wa.me/51999999999?text=Hola%2C%20estoy%20interesado%20en%20la%20Cámara%20IP%204K" class="buy-btn" target="_blank">
+                                <i class="ri-whatsapp-line"></i> Comprar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card reveal" data-category="grabadores">
+                    <div class="product-img">
+                        <img src="../img/products/p2.png" alt="NVR Pro 16 Canales">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Grabación</div>
+                        <h3>NVR Pro Edition 16 Canales 4K</h3>
+                        <div class="product-rating">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-half-line"></i>
+                            <span>(24)</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="current-price">S/ 1,290</span>
+                            </div>
+                            <a href="https://wa.me/51999999999?text=Hola%2C%20estoy%20interesado%20en%20el%20NVR%2016%20Canales" class="buy-btn" target="_blank">
+                                <i class="ri-whatsapp-line"></i> Comprar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card reveal" data-category="kits">
+                    <div class="product-badge discount">-15% OFF</div>
+                    <div class="product-img">
+                        <img src="../img/products/p3.png" alt="Kit Seguridad 4 Cámaras">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Sistemas Completos</div>
+                        <h3>Kit Seguridad 4 Cámaras + DVR + Disco</h3>
+                        <div class="product-rating">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <span>(115)</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="old-price">S/ 1,800</span>
+                                <span class="current-price">S/ 1,530</span>
+                            </div>
+                            <a href="https://wa.me/51999999999?text=Hola%2C%20estoy%20interesado%20en%20el%20Kit%20de%204%20Cámaras" class="buy-btn" target="_blank">
+                                <i class="ri-whatsapp-line"></i> Comprar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="product-card reveal" data-category="camaras">
+                    <div class="product-img placeholder-img">
+                        <i class="ri-camera-lens-line"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">CCTV / IP</div>
+                        <h3>Cámara PTZ Exterior 360° Zoom 30x</h3>
+                        <div class="product-rating">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <span>(32)</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="current-price">S/ 890</span>
+                            </div>
+                            <a href="https://wa.me/51999999999?text=Hola%2C%20estoy%20interesado%20en%20la%20Cámara%20PTZ%20360" class="buy-btn" target="_blank">
+                                <i class="ri-whatsapp-line"></i> Comprar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="product-card reveal" data-category="grabadores">
+                    <div class="product-img placeholder-img">
+                        <i class="ri-hard-drive-line"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Almacenamiento</div>
+                        <h3>Disco Duro WD Purple 4TB Especial CCTV</h3>
+                        <div class="product-rating">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <span>(89)</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="current-price">S/ 420</span>
+                            </div>
+                            <a href="https://wa.me/51999999999?text=Hola%2C%20estoy%20interesado%20en%20el%20Disco%20Duro%20Purple" class="buy-btn" target="_blank">
+                                <i class="ri-whatsapp-line"></i> Comprar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="product-card reveal" data-category="kits">
+                    <div class="product-badge">Nuevo</div>
+                    <div class="product-img placeholder-img">
+                        <i class="ri-shield-keyhole-line"></i>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Intrusión</div>
+                        <h3>Panel de Alarma Inalámbrico WiFi/4G</h3>
+                        <div class="product-rating">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-half-line"></i>
+                            <span>(15)</span>
+                        </div>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="current-price">S/ 650</span>
+                            </div>
+                            <a href="https://wa.me/51999999999?text=Hola%2C%20estoy%20interesado%20en%20el%20Panel%20de%20Alarma" class="buy-btn" target="_blank">
+                                <i class="ri-whatsapp-line"></i> Comprar
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cctv-solution">
+            <div class="container cctv-grid">
+                <div class="cctv-image reveal-left">
+                    <img src="../img/content/instalacion-camara-de-seguridad-wifi.jpg" alt="Equipos de seguridad de marcas reconocidas" loading="lazy">
+                </div>
+                <div class="cctv-content reveal-right">
+                    <h2>TRABAJAMOS CON <span>LAS MEJORES MARCAS</span></h2>
+                    <p>Para garantizar la durabilidad y eficacia de nuestros sistemas, somos integradores de las marcas líderes a nivel mundial en seguridad electrónica. Todos nuestros productos cuentan con garantía oficial y soporte técnico especializado.</p>
+                    <a href="contacto.html" class="btn-primary"><i class="ri-shopping-cart-2-line"></i> SOLICITAR CATÁLOGO PDF</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="../img/brand/logo.png" alt="Security Vision Pro">
+                    <p>Soluciones de videovigilancia y seguridad electrónica de última generación para hogares, negocios e instituciones en Sullana y todo el Perú.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="ri-tiktok-fill"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>NAVEGACIÓN</h4>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACTO</h4>
+                    <ul>
+                        <li><a href="mailto:soporte@securityvision.pe"><i class="ri-mail-line"></i> soporte@securityvision.pe</a></li>
+                        <li><a href="tel:+51999999999"><i class="ri-phone-line"></i> +51 999 999 999</a></li>
+                        <li><a href="#"><i class="ri-map-pin-line"></i> Sullana, Piura, Perú</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Security Vision Pro. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/51999999999?text=Hola%2C%20quiero%20información%20sobre%20los%20productos%20y%20equipos" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <i class="ri-whatsapp-line"></i>
+    </a>
+
+    <script src="../script.js"></script>
+</body>
+</html>

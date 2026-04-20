@@ -1,108 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Contacto | Security Vision Pro</title>
-	<link rel="icon" type="image/x-icon" href="../img/icono.ico">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-	<link rel="stylesheet" href="../styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Security Vision Pro</title>
+    <meta name="description" content="Contáctanos para soluciones de videovigilancia y seguridad electrónica en Sullana y todo el Perú.">
+    <link rel="icon" type="image/x-icon" href="../img/brand/icono.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-	<header>
-		<nav class="container">
-			<div class="logo">
-				<a href="../index.html" aria-label="Volver al inicio">
-					<img src="../img/logo.png" alt="Security Vision" class="logo-img">
-				</a>
-			</div>
-			<button type="button" class="menu-toggle" aria-label="Abrir menu principal" aria-expanded="false" aria-controls="mainNav">
-				<span></span>
-				<span></span>
-				<span></span>
-			</button>
-			<ul class="nav-links" id="mainNav">
-				<li><a href="../index.html#inicio">INICIO</a></li>
-				<li><a href="../index.html#servicios">SERVICIOS</a></li>
-				<li><a href="nosotros.html">NOSOTROS</a></li>
-				<li><a href="contacto.html">CONTACTO</a></li>
-			</ul>
-		</nav>
-	</header>
+    <div class="page-loader" aria-hidden="true"><div class="loader-content"><img src="../img/brand/logo.png" alt="Cargando..."><div class="loader-bar"></div></div></div>
+    <header>
+        <nav class="container">
+            <div class="logo"><a href="../index.html" aria-label="Volver al inicio"><img src="../img/brand/logo.png" alt="Security Vision" class="logo-img"></a></div>
+            <button type="button" class="menu-toggle" aria-label="Abrir menu principal" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+            <ul class="nav-links" id="mainNav">
+                <li><a href="../index.html#inicio">INICIO</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="productos.html">PRODUCTOS</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <canvas id="particles-canvas"></canvas>
+            <div class="container">
+                <div class="hero-text">
 
-	<main>
-		<section class="hero">
-			<div class="container">
-				<div class="hero-text">
-					<span class="badge">ATENCION PRIORITARIA</span>
-					<h1>HABLEMOS DE TU <span>SEGURIDAD</span>.</h1>
-					<p>Disenamos soluciones de videovigilancia y control de acceso para empresas, residencias e instituciones en todo el Peru.</p>
-					<div class="hero-btns">
-						<a href="#formulario-contacto" class="btn-primary">SOLICITAR ASESORIA</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="contact container" id="formulario-contacto">
-			<div class="section-title">
-				<h2>CANALES DE CONTACTO</h2>
-				<p>Elige el canal que prefieras y un especialista de Security Vision te respondera a la brevedad.</p>
-			</div>
-
-			<div class="contact-grid">
-				<div class="card">
-					<div class="info-item">
-						<i class="ri-map-pin-line"></i>
-						<div>
-							<strong>Ubicacion</strong>
-							<p>Sullana - Lima, Peru</p>
-						</div>
-					</div>
-					<div class="info-item">
-						<i class="ri-mail-send-line"></i>
-						<div>
-							<strong>Correo</strong>
-							<p>soporte@securityvision.pe</p>
-						</div>
-					</div>
-					<div class="info-item">
-						<i class="ri-phone-line"></i>
-						<div>
-							<strong>Telefono</strong>
-							<p>+51 999 999 999</p>
-						</div>
-					</div>
-					<div class="info-item">
-						<i class="ri-time-line"></i>
-						<div>
-							<strong>Horario</strong>
-							<p>Lunes a Sabado, 8:00 am - 8:00 pm</p>
-						</div>
-					</div>
-				</div>
-
-				<form class="contact-form card">
-					<input type="text" id="contactName" placeholder="Nombre completo" required>
-					<input type="email" placeholder="Correo corporativo" required>
-					<input type="tel" placeholder="Telefono o WhatsApp" required>
-					<input type="text" placeholder="Empresa (opcional)">
-					<textarea placeholder="Describe tu necesidad de seguridad" rows="6" required></textarea>
-					<button type="submit" class="btn-primary">ENVIAR SOLICITUD</button>
-				</form>
-			</div>
-		</section>
-	</main>
-
-	<footer>
-		<div class="container">
-			<p>© 2026 Security Vision Pro. Todos los derechos reservados.</p>
-		</div>
-	</footer>
-
-	<script src="../script.js"></script>
+                    <h1>HABLEMOS DE TU <span>SEGURIDAD</span>.</h1>
+                    <p>Diseñamos soluciones de videovigilancia y control de acceso para empresas, residencias e instituciones en todo el Perú.</p>
+                    <div class="hero-btns"><a href="#formulario-contacto" class="btn-primary"><i class="ri-chat-1-line"></i> SOLICITAR ASESORÍA</a></div>
+                </div>
+            </div>
+        </section>
+        <section class="contact container" id="formulario-contacto">
+            <div class="section-title reveal"><h2>CANALES DE CONTACTO</h2><p>Elige el canal que prefieras y un especialista de Security Vision te responderá a la brevedad.</p></div>
+            <div class="contact-grid">
+                <div class="card reveal-left">
+                    <div class="info-item"><i class="ri-map-pin-line"></i><div><strong>Ubicación</strong><p>Sullana - Lima, Perú</p></div></div>
+                    <div class="info-item"><i class="ri-mail-send-line"></i><div><strong>Correo</strong><p>soporte@securityvision.pe</p></div></div>
+                    <div class="info-item"><i class="ri-phone-line"></i><div><strong>Teléfono</strong><p>+51 999 999 999</p></div></div>
+                    <div class="info-item"><i class="ri-time-line"></i><div><strong>Horario</strong><p>Lunes a Sábado, 8:00 am - 8:00 pm</p></div></div>
+                </div>
+                <form class="contact-form card reveal-right">
+                    <input type="text" id="contactName" placeholder="Nombre completo" required>
+                    <input type="email" placeholder="Correo corporativo" required>
+                    <input type="tel" placeholder="Teléfono o WhatsApp" required>
+                    <input type="text" placeholder="Empresa (opcional)">
+                    <textarea placeholder="Describe tu necesidad de seguridad" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary"><i class="ri-send-plane-fill"></i> ENVIAR SOLICITUD</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-grid">
+                <div class="footer-brand"><img src="../img/brand/logo.png" alt="Security Vision Pro"><p>Soluciones de videovigilancia y seguridad electrónica de última generación en Sullana y todo el Perú.</p>
+                    <div class="footer-social"><a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a><a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a><a href="#" aria-label="TikTok"><i class="ri-tiktok-fill"></i></a></div>
+                </div>
+                <div class="footer-col"><h4>NAVEGACIÓN</h4><ul><li><a href="../index.html">Inicio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="nosotros.html">Nosotros</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+                <div class="footer-col"><h4>CONTACTO</h4><ul><li><a href="mailto:soporte@securityvision.pe"><i class="ri-mail-line"></i> soporte@securityvision.pe</a></li><li><a href="tel:+51999999999"><i class="ri-phone-line"></i> +51 999 999 999</a></li><li><a href="#"><i class="ri-map-pin-line"></i> Sullana, Piura, Perú</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>© 2026 Security Vision Pro. Todos los derechos reservados.</p></div>
+        </div>
+    </footer>
+    <a href="https://wa.me/51999999999?text=Hola%2C%20quiero%20información%20sobre%20cámaras%20de%20seguridad" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp"><i class="ri-whatsapp-line"></i></a>
+    <script src="../script.js"></script>
 </body>
 </html>

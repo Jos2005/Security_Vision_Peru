@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros | Security Vision Pro</title>
-    <link rel="icon" type="image/x-icon" href="../img/icono.ico">
+    <meta name="description" content="Conoce a Security Vision Pro: empresa de videovigilancia y seguridad electrónica en Sullana y Perú.">
+    <link rel="icon" type="image/x-icon" href="../img/brand/icono.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -12,109 +13,92 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+    <div class="page-loader" aria-hidden="true"><div class="loader-content"><img src="../img/brand/logo.png" alt="Cargando..."><div class="loader-bar"></div></div></div>
     <header>
         <nav class="container">
-            <div class="logo">
-                <a href="../index.html" aria-label="Volver al inicio">
-                    <img src="../img/logo.png" alt="Security Vision" class="logo-img">
-                </a>
-            </div>
-            <button type="button" class="menu-toggle" aria-label="Abrir menu principal" aria-expanded="false" aria-controls="mainNav">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="logo"><a href="../index.html" aria-label="Volver al inicio"><img src="../img/brand/logo.png" alt="Security Vision" class="logo-img"></a></div>
+            <button type="button" class="menu-toggle" aria-label="Abrir menu principal" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
             <ul class="nav-links" id="mainNav">
                 <li><a href="../index.html#inicio">INICIO</a></li>
                 <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="productos.html">PRODUCTOS</a></li>
                 <li><a href="nosotros.html">NOSOTROS</a></li>
                 <li><button type="button" class="btn-contact-nav" id="contactBtn">SOLICITAR COTIZACIÓN</button></li>
             </ul>
         </nav>
     </header>
-
     <main>
         <section class="hero">
+            <canvas id="particles-canvas"></canvas>
             <div class="container">
                 <div class="hero-text">
-                    <span class="badge">QUIÉNES SOMOS</span>
+
                     <h1>SEGURIDAD ELECTRÓNICA <span>INTEGRAL</span></h1>
                     <p>En SECURITY VISIÓN ofrecemos un servicio integral de videovigilancia y seguridad electrónica que abarca desde la asesoría y diseño, hasta la instalación, configuración y mantenimiento de sistemas CCTV.</p>
-                    <div class="hero-btns">
-                        <a href="#equipo" class="btn-primary">CONOCER MÁS</a>
-                    </div>
+                    <div class="hero-btns"><a href="#equipo" class="btn-primary"><i class="ri-arrow-down-line"></i> CONOCER MÁS</a></div>
                 </div>
             </div>
         </section>
-
         <section class="about" id="equipo">
             <div class="container">
-                <div class="about-content">
-                    <span class="badge">NUESTRA EMPRESA</span>
-                    <h1>¿QUÉ HACEMOS EN <span>SECURITY VISIÓN?</span></h1>
+                <div class="about-content reveal">
+
+                    <h2>¿QUÉ HACEMOS EN <span>SECURITY VISIÓN?</span></h2>
                     <p>Nuestro objetivo es brindar soluciones completas y adaptadas a cada cliente, utilizando tecnología moderna, confiable y fácil de usar, que permita monitorear espacios en tiempo real desde dispositivos como celulares o computadoras.</p>
                     <p>Este servicio nace como respuesta a la necesidad de mejorar la seguridad y el control en hogares, negocios y empresas, ya que muchas veces no se tiene visibilidad de lo que ocurre en un lugar cuando no estamos presentes.</p>
                     <p>A través de nuestros sistemas, se puede supervisar en todo momento, prevenir riesgos y contar con evidencia grabada ante cualquier incidente, reduciendo así la vulnerabilidad y aumentando la protección.</p>
-                    <p>Está dirigido a todo tipo de usuarios, desde familias que buscan mayor tranquilidad en sus hogares, hasta emprendedores, oficinas, empresas e instituciones que requieren soluciones más avanzadas de seguridad. Nos adaptamos a diferentes entornos y necesidades, ofreciendo siempre un servicio personalizado y eficiente.</p>
-                    <p>En el área de tecnologías de la información, nuestros sistemas se integran de manera eficiente a la infraestructura de red existente, lo que permite una gestión centralizada, acceso remoto y almacenamiento seguro de la información. Esto facilita una respuesta rápida ante cualquier situación y convierte la seguridad en una herramienta inteligente, brindando control, confianza y tranquilidad de forma continua.</p>
+                    <p>Está dirigido a todo tipo de usuarios, desde familias que buscan mayor tranquilidad en sus hogares, hasta emprendedores, oficinas, empresas e instituciones que requieren soluciones más avanzadas de seguridad.</p>
+                    <p>En el área de tecnologías de la información, nuestros sistemas se integran de manera eficiente a la infraestructura de red existente, lo que permite una gestión centralizada, acceso remoto y almacenamiento seguro de la información.</p>
                 </div>
-                <br>
-                <br>
-                <div class="about-stats">
-                    <div class="stat-card"><h3>24/7</h3><p>Monitoreo en tiempo real</p></div>
+                <div class="about-stats reveal" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 30px;">
+                    <div class="stat-card"><h3 data-count="24" data-suffix="/7">0</h3><p>Monitoreo en tiempo real</p></div>
                     <div class="stat-card"><h3>CCTV</h3><p>Instalación y configuración</p></div>
+                    <div class="stat-card"><h3 data-count="500" data-suffix="+">0</h3><p>Clientes protegidos</p></div>
                 </div>
             </div>
         </section>
-
         <section class="services container">
-            <div class="section-title">
-                <h2>MISIÓN Y VISIÓN</h2>
-                <p>Nuestra dirección estratégica para brindar seguridad y confianza a cada cliente.</p>
-            </div>
-            <div class="grid">
-                <article class="card">
-                    <i class="ri-flag-line"></i>
-                    <h3>Misión</h3>
+            <div class="section-title reveal"><h2>MISIÓN Y VISIÓN</h2><p>Nuestra dirección estratégica para brindar seguridad y confianza a cada cliente.</p></div>
+            <div class="grid stagger-children">
+                <article class="card reveal">
+                    <i class="ri-flag-line"></i><h3>Misión</h3>
                     <p>Brindar soluciones integrales de videovigilancia y seguridad electrónica, ofreciendo servicios de instalación, configuración y mantenimiento de sistemas CCTV, con el fin de proteger hogares, negocios e instituciones mediante tecnología confiable, accesible y de calidad, garantizando la tranquilidad y seguridad de nuestros clientes en Sullana y zonas aledañas.</p>
                 </article>
-                <article class="card">
-                    <i class="ri-eye-line"></i>
-                    <h3>Visión</h3>
+                <article class="card reveal">
+                    <i class="ri-eye-line"></i><h3>Visión</h3>
                     <p>Ser una empresa reconocida a nivel regional por ofrecer soluciones innovadoras en seguridad electrónica, destacando por la calidad del servicio, la confianza y el uso de tecnología moderna, consolidándose como una de las mejores opciones en sistemas de videovigilancia en el norte del Perú.</p>
                 </article>
-                <article class="card">
-                    <i class="ri-heart-2-line"></i>
-                    <h3>Valores</h3>
+                <article class="card reveal">
+                    <i class="ri-heart-2-line"></i><h3>Valores</h3>
                     <ul class="features-list">
                         <li><i class="ri-checkbox-circle-fill"></i> Responsabilidad: Cumplimos con cada servicio de manera seria, puntual y comprometida.</li>
-                        <li><i class="ri-checkbox-circle-fill"></i> Confianza: Brindamos seguridad y transparencia en cada instalación y atención al cliente.</li>
-                        <li><i class="ri-checkbox-circle-fill"></i> Compromiso: Nos enfocamos en satisfacer las necesidades del cliente con soluciones efectivas.</li>
-                        <li><i class="ri-checkbox-circle-fill"></i> Innovación: Utilizamos tecnología moderna para mejorar constantemente nuestros servicios.</li>
-                        <li><i class="ri-checkbox-circle-fill"></i> Calidad: Ofrecemos equipos y trabajos bien realizados que garanticen el mejor rendimiento.</li>
-                        <li><i class="ri-checkbox-circle-fill"></i> Honestidad: Actuamos con ética en cada proceso y recomendación al cliente.</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> Confianza: Brindamos seguridad y transparencia en cada instalación.</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> Compromiso: Satisfacer las necesidades del cliente con soluciones efectivas.</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> Innovación: Tecnología moderna para mejorar constantemente nuestros servicios.</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> Calidad: Equipos y trabajos que garanticen el mejor rendimiento.</li>
+                        <li><i class="ri-checkbox-circle-fill"></i> Honestidad: Ética en cada proceso y recomendación al cliente.</li>
                     </ul>
                 </article>
             </div>
         </section>
-
         <section class="contact container">
-            <div class="section-title">
-                <h2>HABLEMOS DE TU PROYECTO</h2>
-                <p>Cuéntanos tus necesidades y te ayudamos a definir una solución clara y escalable.</p>
-            </div>
-            <div class="hero-btns">
-                <a href="contacto.html" class="btn-primary">IR A CONTACTO</a>
-            </div>
+            <div class="section-title reveal"><h2>HABLEMOS DE TU PROYECTO</h2><p>Cuéntanos tus necesidades y te ayudamos a definir una solución clara y escalable.</p></div>
+            <div class="hero-btns reveal"><a href="contacto.html" class="btn-primary"><i class="ri-chat-1-line"></i> IR A CONTACTO</a></div>
         </section>
     </main>
-
     <footer>
-        <div class="container">
-            <p>© 2026 Security Vision Pro. Todos los derechos reservados.</p>
+        <div class="container footer-content">
+            <div class="footer-grid">
+                <div class="footer-brand"><img src="../img/brand/logo.png" alt="Security Vision Pro"><p>Soluciones de videovigilancia y seguridad electrónica de última generación en Sullana y todo el Perú.</p>
+                    <div class="footer-social"><a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a><a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a><a href="#" aria-label="TikTok"><i class="ri-tiktok-fill"></i></a></div>
+                </div>
+                <div class="footer-col"><h4>NAVEGACIÓN</h4><ul><li><a href="../index.html">Inicio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="nosotros.html">Nosotros</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+                <div class="footer-col"><h4>CONTACTO</h4><ul><li><a href="mailto:soporte@securityvision.pe"><i class="ri-mail-line"></i> soporte@securityvision.pe</a></li><li><a href="tel:+51999999999"><i class="ri-phone-line"></i> +51 999 999 999</a></li><li><a href="#"><i class="ri-map-pin-line"></i> Sullana, Piura, Perú</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>© 2026 Security Vision Pro. Todos los derechos reservados.</p></div>
         </div>
     </footer>
-
+    <a href="https://wa.me/51999999999?text=Hola%2C%20quiero%20información%20sobre%20cámaras%20de%20seguridad" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp"><i class="ri-whatsapp-line"></i></a>
     <script src="../script.js"></script>
 </body>
 </html>

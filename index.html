@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Security Vision Pro | Vigilancia Inteligente</title>
-    <link rel="icon" type="image/x-icon" href="img/icono.ico">
+    <title>Security Vision Pro | Vigilancia Inteligente en Sullana y Perú</title>
+    <meta name="description" content="Security Vision Pro ofrece soluciones de videovigilancia inteligente, cámaras CCTV, monitoreo 24/7 y seguridad electrónica en Sullana y todo el Perú.">
+    <meta name="keywords" content="cámaras de seguridad, CCTV, videovigilancia, monitoreo, Sullana, Perú, seguridad electrónica">
+    <link rel="icon" type="image/x-icon" href="img/brand/icono.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -13,10 +15,18 @@
 </head>
 <body>
 
+    <!-- Page Loader -->
+    <div class="page-loader" aria-hidden="true">
+        <div class="loader-content">
+            <img src="img/brand/logo.png" alt="Cargando...">
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
     <header>
         <nav class="container">
             <div class="logo">
-                <img src="img/logo.png" alt="Security Vision" class="logo-img">
+                <img src="img/brand/logo.png" alt="Security Vision" class="logo-img">
             </div>
             <button type="button" class="menu-toggle" aria-label="Abrir menu principal" aria-expanded="false" aria-controls="mainNav">
                 <span></span>
@@ -26,38 +36,39 @@
             <ul class="nav-links" id="mainNav">
                 <li><a href="#inicio">INICIO</a></li>
                 <li><a href="pages/servicios.html">SERVICIOS</a></li>
-                <li><a href="#productos">PRODUCTOS</a></li>
+                <li><a href="pages/productos.html">PRODUCTOS</a></li>
                 <li><a href="pages/nosotros.html">NOSOTROS</a></li>
-
-                
                 <li><button type="button" class="btn-contact-nav" id="contactBtn">SOLICITAR COTIZACIÓN</button></li>
             </ul>
         </nav>
     </header>
 
     <section id="inicio" class="hero">
+        <canvas id="particles-canvas"></canvas>
         <div class="container">
             <div class="hero-text">
-                <h1>VIGILANCIA <span>INTELIGENTE</span> PARA EL MUNDO REAL.</h1>
-                <p>Implementamos analítica de IA para detener incidentes antes de que ocurran. Monitoreo avanzado 24/7 en Sullana y todo el país.</p>
-                <div class="hero-btns">
-                    <a href="#servicios" class="btn-primary">EXPLORAR TECNOLOGÍA</a>
+                <div class="hero-badge reveal">LÍDERES EN PIURA Y SULLANA</div>
+                <h1 class="reveal">LA SEGURIDAD MÁS AVANZADA DEL <span>NORTE PERUANO</span>.</h1>
+                <p class="reveal">Somos la solución #1 en videovigilancia inteligente para la región Piura. Fusionamos tecnología de vanguardia para proteger hogares, agroindustrias y negocios en Sullana y todo el Perú.</p>
+                <div class="hero-btns reveal">
+                    <a href="#servicios" class="btn-primary"><i class="ri-shield-check-line"></i> EXPLORAR SOLUCIONES</a>
+                    <a href="pages/contacto.html" class="btn-secondary"><i class="ri-team-line"></i> SOLICITAR COTIZACIÓN</a>
                 </div>
             </div>
-            <div class="hero-industries" aria-label="Sectores protegidos">
-                <article class="industry-card">
+            <div class="hero-industries stagger-children" aria-label="Sectores protegidos">
+                <article class="industry-card reveal">
                     <img src="img/industria/1.webp" alt="Seguridad para hoteles" loading="lazy">
                     <h3>HOTELES</h3>
                 </article>
-                <article class="industry-card">
+                <article class="industry-card reveal">
                     <img src="img/industria/2.webp" alt="Seguridad para propiedades" loading="lazy">
                     <h3>PROPIEDADES</h3>
                 </article>
-                <article class="industry-card">
+                <article class="industry-card reveal">
                     <img src="img/industria/3.webp" alt="Seguridad para distribución" loading="lazy">
                     <h3>DISTRIBUCIÓN</h3>
                 </article>
-                <article class="industry-card">
+                <article class="industry-card reveal">
                     <img src="img/industria/4.webp" alt="Seguridad para colegios" loading="lazy">
                     <h3>COLEGIOS</h3>
                 </article>
@@ -65,36 +76,96 @@
         </div>
     </section>
 
+    <!-- Regional Impact / Stats -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal">
+                    <div class="stat-number-wrapper">
+                        <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+                    </div>
+                    <p>Proyectos Exitosos</p>
+                </div>
+                <div class="stat-item reveal">
+                    <div class="stat-number-wrapper">
+                        <span class="stat-number" data-target="1500">0</span><span class="stat-plus">+</span>
+                    </div>
+                    <p>Cámaras Instaladas</p>
+                </div>
+                <div class="stat-item reveal">
+                    <div class="stat-number-wrapper">
+                        <span class="stat-number" data-target="24">0</span><span class="stat-plus">/7</span>
+                    </div>
+                    <p>Monitoreo Local</p>
+                </div>
+                <div class="stat-item reveal">
+                    <div class="stat-number-wrapper">
+                        <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+                    </div>
+                    <p>Efectividad Regional</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Carousel -->
+    <section class="brands-section">
+        <div class="container">
+            <div class="section-title reveal" style="margin-bottom: 30px;">
+                <p style="color: var(--primary); font-weight: 700; letter-spacing: 2px;">TRABAJAMOS CON LOS MEJORES</p>
+                <h2>MARCAS DE CONFIANZA</h2>
+            </div>
+            <div class="brands-carousel">
+                <div class="brands-track">
+                    <div class="brand-item"><img src="img/brands/hikvision.png" alt="HIKVISION"></div>
+                    <div class="brand-item"><img src="img/brands/dahua.png" alt="DAHUA"></div>
+                    <div class="brand-item"><img src="img/brands/hilook.png" alt="HILOOK"></div>
+                    <div class="brand-item"><img src="img/brands/wd.png" alt="WD PURPLE"></div>
+                    <!-- Repetir para scroll infinito -->
+                    <div class="brand-item"><img src="img/brands/hikvision.png" alt="HIKVISION"></div>
+                    <div class="brand-item"><img src="img/brands/dahua.png" alt="DAHUA"></div>
+                    <div class="brand-item"><img src="img/brands/hilook.png" alt="HILOOK"></div>
+                    <div class="brand-item"><img src="img/brands/wd.png" alt="WD PURPLE"></div>
+                    <!-- Triplicar para asegurar fluidez en pantallas grandes -->
+                    <div class="brand-item"><img src="img/brands/hikvision.png" alt="HIKVISION"></div>
+                    <div class="brand-item"><img src="img/brands/dahua.png" alt="DAHUA"></div>
+                    <div class="brand-item"><img src="img/brands/hilook.png" alt="HILOOK"></div>
+                    <div class="brand-item"><img src="img/brands/wd.png" alt="WD PURPLE"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="cctv-solution">
         <div class="container cctv-grid">
-            <div class="cctv-image">
-                <img src="img/instalacion-camara-de-seguridad-wifi.jpg" alt="Instalación de cámara de seguridad WiFi" loading="lazy">
+            <div class="cctv-image reveal-left">
+                <img src="img/content/instalacion-camara-de-seguridad-wifi.jpg" alt="Instalación de cámara de seguridad WiFi" loading="lazy">
             </div>
-            <div class="cctv-content">
+            <div class="cctv-content reveal-right">
                 <h2>VIGILANCIA INTEGRAL <span>EN UNA PLATAFORMA</span></h2>
                 <p>Con nuestro sistema CCTV de última generación, obtén monitoreo en tiempo real de todos tus espacios. Protege tu hogar, negocio o infraestructura con grabación de alta definición, almacenamiento seguro en la nube y alertas instantáneas ante cualquier evento sospechoso. Acceso remoto disponible 24/7 desde cualquier dispositivo.</p>
-                <a href="pages/contacto.html" class="btn-primary">SOLICITAR COTIZACIÓN</a>
+                <a href="pages/contacto.html" class="btn-primary"><i class="ri-chat-1-line"></i> SOLICITAR COTIZACIÓN</a>
             </div>
         </div>
     </section>
 
     <section id="servicios" class="services container">
-        <div class="section-title">
+        <div class="section-title reveal">
             <h2>NUESTROS SERVICIOS</h2>
             <p>Soluciones de seguridad pensadas para instalación, monitoreo, mantenimiento y respaldo.</p>
         </div>
-        <div class="grid">
-            <div class="card">
+        <div class="grid stagger-children">
+            <div class="card reveal">
                 <i class="ri-camera-3-line"></i>
                 <h3>Cámaras de seguridad</h3>
                 <p>Instalación de cámaras para interiores, exteriores y perímetros con configuración profesional.</p>
             </div>
-            <div class="card">
+            <div class="card reveal">
                 <i class="ri-monitor-line"></i>
                 <h3>Monitoreo HD</h3>
                 <p>Sistemas de monitoreo de alta definición para visualización clara y control en tiempo real.</p>
             </div>
-            <div class="card">
+            <div class="card reveal">
                 <i class="ri-tools-line"></i>
                 <h3>Mantenimiento y respaldo</h3>
                 <p>Mantenimiento preventivo y correctivo, respaldo de datos y capacitación para el uso de equipos.</p>
@@ -104,52 +175,223 @@
 
     <section id="nosotros" class="about">
         <div class="container grid">
-            <div class="about-content">
-                <span class="badge">NUESTRA MISIÓN</span>
+            <div class="about-content reveal-left">
+
                 <h2>LIDERANDO LA <span>SEGURIDAD ELECTRÓNICA</span></h2>
                 <p>En Security Vision, nos especializamos en la integración de soluciones avanzadas de videovigilancia. Nuestra infraestructura está diseñada para proteger activos críticos.</p>
                 <ul class="features-list">
                     <li><i class="ri-checkbox-circle-fill"></i> Monitoreo 24/7 en Sullana y nivel nacional.</li>
                     <li><i class="ri-checkbox-circle-fill"></i> Cumplimiento con estándares internacionales.</li>
+                    <li><i class="ri-checkbox-circle-fill"></i> Soporte técnico remoto y presencial.</li>
+                    <li><i class="ri-checkbox-circle-fill"></i> Equipos de última generación certificados.</li>
                 </ul>
             </div>
-            <div class="about-stats">
-                <div class="stat-card"><h3>100%</h3><p>Cifrado de Datos</p></div>
-                <div class="stat-card"><h3>24/7</h3><p>Soporte Técnico</p></div>
+            <div class="about-stats reveal-right">
+                <div class="stat-card">
+                    <h3 data-count="100" data-suffix="%">0%</h3>
+                    <p>Cifrado de Datos</p>
+                </div>
+                <div class="stat-card">
+                    <h3 data-count="24" data-suffix="/7">0</h3>
+                    <p>Soporte Técnico</p>
+                </div>
+                <div class="stat-card">
+                    <h3 data-count="500" data-suffix="+">0</h3>
+                    <p>Cámaras Instaladas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>LO QUE DICEN NUESTROS CLIENTES</h2>
+                <p>Empresas y hogares que confían en nuestra tecnología de seguridad.</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                    <blockquote>"Security Vision transformó la seguridad de nuestro hotel. El monitoreo remoto nos da total tranquilidad y el equipo siempre responde rápido."</blockquote>
+                    <div class="testimonial-author">
+                        <img src="img/testimonials/maria.png" alt="María Rodríguez" class="testimonial-avatar">
+                        <div class="testimonial-author-info">
+                            <strong>María Rodríguez</strong>
+                            <span>Gerente — Hotel Costa del Sol</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                    <blockquote>"Instalaron 8 cámaras en nuestro almacén en tiempo récord. La calidad de imagen es impresionante y el acceso desde el celular es muy fácil."</blockquote>
+                    <div class="testimonial-author">
+                        <img src="img/testimonials/carlos.png" alt="Carlos López" class="testimonial-avatar">
+                        <div class="testimonial-author-info">
+                            <strong>Carlos López</strong>
+                            <span>Dueño — Distribuidora Norte</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-star-fill"></i>
+                    </div>
+                    <blockquote>"Excelente servicio. Nos ayudaron a cubrir todos los puntos críticos del colegio. Los padres de familia están muy conformes con la seguridad."</blockquote>
+                    <div class="testimonial-author">
+                        <img src="img/testimonials/ana.png" alt="Ana Peña" class="testimonial-avatar">
+                        <div class="testimonial-author-info">
+                            <strong>Ana Peña</strong>
+                            <span>Directora — I.E. San Miguel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>PREGUNTAS FRECUENTES</h2>
+                <p style="color: #666;">Resolvemos tus dudas principales sobre nuestros sistemas de seguridad.</p>
+            </div>
+            <div class="faq-accordion reveal">
+                <div class="faq-item">
+                    <button class="faq-question">¿Qué tiempo de garantía tienen los equipos? <i class="ri-arrow-down-s-line"></i></button>
+                    <div class="faq-answer"><p>Ofrecemos 1 año de garantía en todos los equipos por defectos de fábrica y 6 meses en nuestro servicio de instalación profesional.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">¿Puedo ver las cámaras desde mi celular estando de viaje? <i class="ri-arrow-down-s-line"></i></button>
+                    <div class="faq-answer"><p>Sí, configuramos todo para que mediante una aplicación móvil puedas monitorear tu hogar o negocio en tiempo real desde cualquier parte del mundo.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">¿Cuántos días de grabación se guardan? <i class="ri-arrow-down-s-line"></i></button>
+                    <div class="faq-answer"><p>Esto varía según el disco duro que elijas y la cantidad de cámaras, pero lo estándar es entre 15 y 30 días de grabación ininterrumpida.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">¿Realizan visitas técnicas de evaluación? <i class="ri-arrow-down-s-line"></i></button>
+                    <div class="faq-answer"><p>Por supuesto, realizamos una visita previa a tu domicilio o empresa para evaluar puntos ciegos, distancias y recomendarte el mejor equipo.</p></div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contacto" class="contact container">
-        <div class="section-title">
+        <div class="section-title reveal">
             <h2>CONTACTA CON UN EXPERTO</h2>
             <p>Protege tu infraestructura hoy mismo.</p>
         </div>
         <div class="contact-grid">
-            <div class="contact-info">
+            <div class="contact-info reveal-left">
                 <div class="info-item">
                     <i class="ri-map-pin-line"></i>
-                    <p>Sullana - Lima, Perú</p>
+                    <div>
+                        <strong>Ubicación</strong>
+                        <p>Sullana - Lima, Perú</p>
+                    </div>
                 </div>
                 <div class="info-item">
                     <i class="ri-mail-send-line"></i>
-                    <p>soporte@securityvision.pe</p>
+                    <div>
+                        <strong>Correo</strong>
+                        <p>soporte@securityvision.pe</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="ri-phone-line"></i>
+                    <div>
+                        <strong>Teléfono</strong>
+                        <p>+51 999 999 999</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="ri-time-line"></i>
+                    <div>
+                        <strong>Horario</strong>
+                        <p>Lunes a Sábado, 8:00 am - 8:00 pm</p>
+                    </div>
                 </div>
             </div>
-            <form class="contact-form">
+            <form class="contact-form reveal-right">
                 <input type="text" id="contactName" placeholder="Nombre Completo" required>
-                <input type="email" placeholder="Correo Corporativo" required>
-                <textarea placeholder="Describa su requerimiento de seguridad" rows="5"></textarea>
-                <button type="submit" class="btn-primary">ENVIAR SOLICITUD</button>
+                <input type="email" id="contactEmail" placeholder="Correo Corporativo" required>
+                <input type="tel" id="contactPhone" placeholder="Teléfono o WhatsApp">
+                <textarea id="contactMessage" placeholder="Describa su requerimiento de seguridad" rows="5"></textarea>
+                <button type="submit" class="btn-primary"><i class="ri-send-plane-fill"></i> ENVIAR SOLICITUD</button>
             </form>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>© 2026 Security Vision Pro. Todos los derechos reservados.</p>
+        <div class="container footer-content">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="img/brand/logo.png" alt="Security Vision Pro">
+                    <p>Soluciones de videovigilancia y seguridad electrónica de última generación para hogares, negocios e instituciones en Sullana y todo el Perú.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="ri-tiktok-fill"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>NAVEGACIÓN</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="pages/servicios.html">Servicios</a></li>
+                        <li><a href="pages/nosotros.html">Nosotros</a></li>
+                        <li><a href="pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>SERVICIOS</h4>
+                    <ul>
+                        <li><a href="pages/servicios.html">Cámaras CCTV</a></li>
+                        <li><a href="pages/servicios.html">Monitoreo HD</a></li>
+                        <li><a href="pages/servicios.html">Mantenimiento</a></li>
+                        <li><a href="pages/servicios.html">Acceso Remoto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACTO</h4>
+                    <ul>
+                        <li><a href="mailto:soporte@securityvision.pe"><i class="ri-mail-line"></i> soporte@securityvision.pe</a></li>
+                        <li><a href="tel:+51999999999"><i class="ri-phone-line"></i> +51 999 999 999</a></li>
+                        <li><a href="#"><i class="ri-map-pin-line"></i> Sullana, Piura, Perú</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Security Vision Pro. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Términos de servicio</a>
+                    <a href="#">Política de privacidad</a>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/51999999999?text=Hola%2C%20quiero%20información%20sobre%20cámaras%20de%20seguridad" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <i class="ri-whatsapp-line"></i>
+    </a>
 
     <script src="script.js"></script>
 </body>
