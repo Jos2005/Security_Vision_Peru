@@ -100,7 +100,7 @@
     opacity: 1;
 }
 
-.card i:not(.service-card-icon-overlay i) {
+.card > i:not(.service-card-icon-overlay i) {
     font-size: 2.2rem;
     color: var(--primary);
     margin-top: 24px;
