@@ -125,6 +125,7 @@
 
 .card h3 {
     font-size: 1.1rem;
+    margin-top: 24px;
     margin-bottom: 14px;
     color: var(--secondary-dark);
     letter-spacing: 0.02em;
@@ -136,6 +137,33 @@
     font-size: 0.95rem;
     line-height: 1.7;
     padding: 0 28px 28px 28px;
+}
+
+/* ─── Diagram Section ─── */
+.diagram-section {
+    padding: 80px 0;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.diagram-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+}
+
+.diagram-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.diagram-container:hover .diagram-img {
+    transform: scale(1.01);
 }
 
 /* ─── CCTV Solution Section ─── */
