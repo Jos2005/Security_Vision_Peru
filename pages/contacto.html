@@ -42,19 +42,54 @@
         <section class="contact container" id="formulario-contacto">
             <div class="section-title reveal"><h2>CANALES DE CONTACTO</h2><p>Elige el canal que prefieras y un especialista de Security Vision te responderá a la brevedad.</p></div>
             <div class="contact-grid">
-                <div class="card reveal-left">
-                    <div class="info-item"><i class="ri-map-pin-line"></i><div><strong>Ubicación</strong><p>Sullana - Lima, Perú</p></div></div>
-                    <div class="info-item"><i class="ri-mail-send-line"></i><div><strong>Correo</strong><p>soporte@securityvision.pe</p></div></div>
-                    <div class="info-item"><i class="ri-phone-line"></i><div><strong>Teléfono</strong><p>+51 999 999 999</p></div></div>
-                    <div class="info-item"><i class="ri-time-line"></i><div><strong>Horario</strong><p>Lunes a Sábado, 8:00 am - 8:00 pm</p></div></div>
+                <div class="contact-card reveal-left" style="padding: 40px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 32px;">
+                    <div class="info-item" style="display: flex; align-items: flex-start; gap: 20px;">
+                        <i class="ri-map-pin-line" style="font-size: 1.4rem; color: var(--primary); width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; background: rgba(227, 5, 16, 0.08); border-radius: var(--radius-sm); border: 1px solid rgba(227, 5, 16, 0.12); flex-shrink: 0;"></i>
+                        <div>
+                            <strong style="display: block; color: var(--secondary-dark); font-size: 1.1rem; margin-bottom: 4px;">Ubicación</strong>
+                            <p style="color: var(--muted); margin: 0; padding: 0; font-size: 0.95rem;">Sullana - Lima, Perú</p>
+                        </div>
+                    </div>
+                    <div class="info-item" style="display: flex; align-items: flex-start; gap: 20px;">
+                        <i class="ri-mail-send-line" style="font-size: 1.4rem; color: var(--primary); width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; background: rgba(227, 5, 16, 0.08); border-radius: var(--radius-sm); border: 1px solid rgba(227, 5, 16, 0.12); flex-shrink: 0;"></i>
+                        <div>
+                            <strong style="display: block; color: var(--secondary-dark); font-size: 1.1rem; margin-bottom: 4px;">Correo</strong>
+                            <p style="color: var(--muted); margin: 0; padding: 0; font-size: 0.95rem;">soporte@securityvision.pe</p>
+                        </div>
+                    </div>
+                    <div class="info-item" style="display: flex; align-items: flex-start; gap: 20px;">
+                        <i class="ri-phone-line" style="font-size: 1.4rem; color: var(--primary); width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; background: rgba(227, 5, 16, 0.08); border-radius: var(--radius-sm); border: 1px solid rgba(227, 5, 16, 0.12); flex-shrink: 0;"></i>
+                        <div>
+                            <strong style="display: block; color: var(--secondary-dark); font-size: 1.1rem; margin-bottom: 4px;">Teléfono</strong>
+                            <p style="color: var(--muted); margin: 0; padding: 0; font-size: 0.95rem;">+51 999 999 999</p>
+                        </div>
+                    </div>
+                    <div class="info-item" style="display: flex; align-items: flex-start; gap: 20px;">
+                        <i class="ri-time-line" style="font-size: 1.4rem; color: var(--primary); width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; background: rgba(227, 5, 16, 0.08); border-radius: var(--radius-sm); border: 1px solid rgba(227, 5, 16, 0.12); flex-shrink: 0;"></i>
+                        <div>
+                            <strong style="display: block; color: var(--secondary-dark); font-size: 1.1rem; margin-bottom: 4px;">Horario</strong>
+                            <p style="color: var(--muted); margin: 0; padding: 0; font-size: 0.95rem;">Lunes a Sábado, 8:00 am - 8:00 pm</p>
+                        </div>
+                    </div>
                 </div>
-                <form class="contact-form card reveal-right">
-                    <input type="text" id="contactName" placeholder="Nombre completo" required>
-                    <input type="email" placeholder="Correo corporativo" required>
-                    <input type="tel" placeholder="Teléfono o WhatsApp" required>
-                    <input type="text" placeholder="Empresa (opcional)">
-                    <textarea placeholder="Describe tu necesidad de seguridad" rows="5" required></textarea>
-                    <button type="submit" class="btn-primary"><i class="ri-send-plane-fill"></i> ENVIAR SOLICITUD</button>
+                <form class="contact-form contact-card reveal-right" style="padding: 40px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); position: relative; overflow: hidden; display: grid; gap: 20px;">
+                    <div style="display: grid; gap: 8px;">
+                        <label style="font-size: 0.85rem; color: var(--muted); font-weight: 600;">Nombre completo</label>
+                        <input type="text" id="contactName" placeholder="Tu nombre" required style="width: 100%; padding: 14px 18px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: var(--radius-sm); color: #fff;">
+                    </div>
+                    <div style="display: grid; gap: 8px;">
+                        <label style="font-size: 0.85rem; color: var(--muted); font-weight: 600;">Correo corporativo</label>
+                        <input type="email" placeholder="ejemplo@correo.com" required style="width: 100%; padding: 14px 18px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: var(--radius-sm); color: #fff;">
+                    </div>
+                    <div style="display: grid; gap: 8px;">
+                        <label style="font-size: 0.85rem; color: var(--muted); font-weight: 600;">Teléfono o WhatsApp</label>
+                        <input type="tel" placeholder="+51 ..." required style="width: 100%; padding: 14px 18px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: var(--radius-sm); color: #fff;">
+                    </div>
+                    <div style="display: grid; gap: 8px;">
+                        <label style="font-size: 0.85rem; color: var(--muted); font-weight: 600;">Descripción del proyecto</label>
+                        <textarea placeholder="Cuéntanos qué necesitas proteger..." rows="4" required style="width: 100%; padding: 14px 18px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: var(--radius-sm); color: #fff; resize: none;"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="margin-top: 10px; width: fit-content; align-self: flex-start;"><i class="ri-send-plane-fill"></i> ENVIAR SOLICITUD</button>
                 </form>
             </div>
         </section>
