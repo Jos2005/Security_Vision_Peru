@@ -144,7 +144,7 @@ section { scroll-margin-top: 88px; }
 .page-loader {
     position: fixed;
     inset: 0;
-    background: var(--bg-page);
+    background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,7 +173,7 @@ section { scroll-margin-top: 88px; }
 .loader-bar {
     width: 160px;
     height: 3px;
-    background: rgba(255, 255, 255, 0.06);
+    background: #e5e7eb;
     border-radius: 4px;
     overflow: hidden;
 }

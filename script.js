@@ -301,10 +301,38 @@ function initParallax() {
     }, { passive: true });
 }
 
+// ─── FAQ Accordion ───
+function initFAQ() {
+    const faqItems = document.querySelectorAll('.faq-item');
+    if (!faqItems.length) return;
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+
+            // Cerrar todas las demás respuestas
+            faqItems.forEach(otherItem => {
+                otherItem.classList.remove('active');
+                otherItem.querySelector('.faq-answer').style.maxHeight = null;
+            });
+
+            // Si no estaba activa, abrirla
+            if (!isActive) {
+                item.classList.add('active');
+                answer.style.maxHeight = answer.scrollHeight + "px";
+            }
+        });
+    });
+}
+
 // ─── Initialize Everything ───
 document.addEventListener('DOMContentLoaded', () => {
     initScrollReveal();
     initCounters();
     initParticles();
     initParallax();
+    initFAQ();
 });
