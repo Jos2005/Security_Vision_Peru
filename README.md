@@ -1,29 +1,52 @@
 # Security Vision
 
-Sitio web corporativo para **Security Vision Pro**, enfocado en soluciones de videovigilancia inteligente en Sullana y Perú.
+![Estado](https://img.shields.io/badge/estado-acad%C3%A9mico-blue)
+![Tipo](https://img.shields.io/badge/tipo-web%20est%C3%A1tica-red)
+![Tecnolog%C3%ADa](https://img.shields.io/badge/stack-HTML%20%7C%20CSS%20%7C%20JS-black)
 
-## Descripción
+Proyecto universitario de desarrollo web orientado a la creación de una landing moderna para una propuesta de videovigilancia inteligente.
 
-Este proyecto es una web estática con enfoque comercial que presenta:
+Institucion academica: SENATI.
 
-- Servicios de seguridad electrónica.
-- Catálogo de productos y páginas informativas.
-- Secciones de impacto, marcas, testimonios y contacto.
-- Animaciones visuales y experiencia responsive para móvil y escritorio.
+## Aviso importante
+
+Este repositorio fue desarrollado con fines académicos.
+
+No representa una empresa real ni una operación comercial activa.
 
 ## Vista previa
 
 ![Vista previa de Security Vision](img/content/preview.png)
 
-## Tecnologías usadas
+## Objetivo del proyecto
 
-- HTML5
-- CSS3 (modularizado en varios archivos)
-- JavaScript (vanilla)
-- Remix Icon (CDN)
-- Google Fonts (Jost, Orbitron, Public Sans)
+Diseñar una web atractiva, responsive y orientada a conversión para practicar:
 
-## Estructura del proyecto
+- Estructuración de interfaces con HTML semántico.
+- Organización modular de estilos CSS.
+- Interacciones visuales con JavaScript puro.
+- Buenas prácticas de presentación para portafolio académico.
+
+## Características destacadas
+
+- Hero principal con identidad visual fuerte.
+- Loader inicial y transiciones de entrada.
+- Header fijo con comportamiento en scroll.
+- Menú móvil adaptable.
+- Animaciones por aparición con Intersection Observer.
+- Contadores dinámicos y sistema de partículas en canvas.
+- Secciones de servicios, marcas, estadísticas y contacto.
+
+## Stack tecnológico
+
+| Área | Tecnologías |
+|---|---|
+| Estructura | HTML5 |
+| Estilos | CSS3 modular |
+| Interacción | JavaScript Vanilla |
+| Recursos UI | Remix Icon, Google Fonts |
+
+## Estructura del repositorio
 
 ```text
 Security Vision/
@@ -50,43 +73,21 @@ Security Vision/
     └── servicios.html
 ```
 
-## Cómo ejecutar en local
+## Ejecución local
 
-1. Abre la carpeta del proyecto en VS Code.
-2. Ejecuta un servidor local (recomendado con la extensión **Live Server**).
-3. Abre `index.html` en tu navegador.
+1. Abre el proyecto en VS Code.
+2. Inicia un servidor local (recomendado: Live Server).
+3. Abre la página principal desde index.html.
 
-Alternativa rápida sin extensiones:
+## Mejora continua
 
-- Haz doble clic en `index.html` para abrirlo directamente en el navegador.
+Líneas de mejora recomendadas para futuras iteraciones:
 
-## Funcionalidades destacadas
+- Integrar backend para formularios reales de contacto.
+- Añadir métricas de rendimiento y accesibilidad.
+- Optimizar imágenes y SEO técnico.
+- Publicar demo en hosting estático.
 
-- Loader de página al iniciar.
-- Header fijo con efecto al hacer scroll.
-- Menú responsive para dispositivos móviles.
-- Scroll suave en anclas internas.
-- Animaciones al aparecer en viewport (Intersection Observer).
-- Contadores animados de métricas.
-- Sistema de partículas en el hero.
-- Toast de confirmación en formulario de contacto.
+## Créditos
 
-## SEO y marca
-
-La página principal incluye:
-
-- `title`, `meta description` y `meta keywords`.
-- Favicon de marca.
-- Contenido orientado a posicionamiento local en Sullana y Perú.
-
-## Estado del proyecto
-
-Proyecto funcional de presentación corporativa, preparado para:
-
-- despliegue en hosting estático,
-- mejoras de conversión (formularios conectados a backend),
-- y optimización SEO adicional.
-
-## Autor
-
-Desarrollado para **Security Vision Pro**.
+Trabajo desarrollado para practica academica en SENATI, orientado al estudio de desarrollo frontend.
